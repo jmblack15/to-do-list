@@ -1,9 +1,11 @@
-function TodoItem({ text }) {
+function TodoItem({ text, onDelete, onComplete }) {
+
+
   return (
     <li>
-      <span>C</span>
+      <span onClick={onComplete}>C</span>
       <p>{text}</p>
-      <span>X</span>
+      <span onClick={onDelete}>X</span>
     </li>
   )
 }
