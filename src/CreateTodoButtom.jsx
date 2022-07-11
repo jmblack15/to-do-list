@@ -1,6 +1,11 @@
 function CreateTodoButtom() {
+
+  const onClickButtom = () => {
+    alert('Se deberia abrir el modal')
+  }
+
   return (
-    <button>+</button>
+    <button onClick={onClickButtom}>+</button>
   );
 }
 
