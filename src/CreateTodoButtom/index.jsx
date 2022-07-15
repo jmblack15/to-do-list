@@ -1,7 +1,7 @@
-function CreateTodoButtom() {
+function CreateTodoButtom({ setOpenModal }) {
 
   const onClickButtom = () => {
-    alert('Se deberia abrir el modal')
+    setOpenModal(stateModal => !stateModal);
   }
 
   return (
